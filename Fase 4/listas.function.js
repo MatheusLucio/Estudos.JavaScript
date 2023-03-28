@@ -10,6 +10,7 @@ function numerosPares(lista) {
 
 }
 
+
 // Crie uma função que recebe um array de palavras e retorna um novo array contendo apenas as palavras com mais de cinco letras.
 
 function arrayPalavras(lista) {
