@@ -45,7 +45,7 @@ function somaPositivos(lista) {
 //Crie uma função que recebe um array de strings e retorna um novo array contendo apenas as strings que contém a letra "a".
 
 function textoA(lista) {
-  const letraA = lista.filter(palavra => palavra.indexOf('a') != -1)
+  const letraA = lista.filter(palavra => palavra.indexOf('a') !== -1)
 
   return 'Exercício 5 = ' + letraA
 }
@@ -54,7 +54,7 @@ function textoA(lista) {
 
 function numerosImpares(lista) {
 
-  const numerosImpares = lista.filter(numero => numero % 2 != 0)
+  const numerosImpares = lista.filter(numero => numero % 2 !== 0)
 
   return 'Exercício 6 = ' + numerosImpares
 
@@ -255,16 +255,21 @@ function todasVogais(lista){
 //Crie uma função que recebe um array de números e retorna um novo array contendo apenas os números que possuem os mesmos dígitos de outro número presente no array.
 
 function numerosArrays(numeros) {
-  return numeros.filter((num, i) => { const mesmosNumeros = num.toString().split('').sort().join('')
-  return numeros.slice(i + 1).some(lista => { const outrosNumeros = lista.toString().split('').sort().join('')
-  return mesmosNumeros === outrosNumeros})})
+  return numeros.filter((num, i) => { 
+    const mesmosNumeros = num.toString().split('').sort().join('')
+  return numeros.slice(i + 1).some(lista => { 
+    const outrosNumeros = lista.toString().split('').sort().join('')
+  return mesmosNumeros === outrosNumeros})
+})
 }
 
 //Crie uma função que recebe um array de strings e retorna um novo array contendo apenas as strings que são anagramas de outra string presente no array.
 
 function anagramas (lista) {
-  return lista.filter((palavra, index) => { let palavraOrdenada = palavra.toLowerCase().split('').sort().join('');
-  return 'Exercicio 26 = ' + lista.slice(index + 1).some(item => palavraOrdenada === item.toLowerCase().split('').sort().join(''))});
+  return lista.filter((palavra, index) => { 
+    let palavraOrdenada = palavra.toLowerCase().split('').sort().join('');
+  return 'Exercicio 26 = ' + lista.slice(index + 1).some(item => palavraOrdenada === item.toLowerCase().split('').sort().join(''))
+});
 }
 
 //Crie uma função que recebe um array de números e retorna um novo array contendo apenas os números que são palíndromos.
@@ -295,7 +300,7 @@ function indiceIgual(lista){
 //Crie uma função que recebe um array de palavras e retorna um novo array contendo apenas as palavras que são anagramas de palavras que estão em uma posição diferente do array.
 
 function indiceDiferente(lista){
-  return 'Exercício 30 = ' + lista.filter((numero, indice) => numero != indice)
+  return 'Exercício 30 = ' + lista.filter((numero, indice) => numero !== indice)
 }
 
 module.exports = {
