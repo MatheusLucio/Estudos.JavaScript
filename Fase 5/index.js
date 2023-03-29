@@ -49,27 +49,72 @@ console.log(listas.media2Elementos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 1
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Facil 1
+// Exercicio Facil 10
 console.log(listas.dobroArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Facil 2
+// Exercicio Facil 11
 console.log(listas.letraMaiscula(['Olá', 'Matheus', 'Caio']));
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Facil 3
+// Exercicio Facil 12
 console.log(listas.numerosPares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Medio 1
+// Exercicio Medio 13
 console.log(listas.numerosImpares([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Medio 2
+// Exercicio Medio 14
 console.log(listas.numerosPrimos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Dificil 15
+console.log(listas.divisiveisPor3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Dificil 16
+console.log(listas.numerosDivisiveis([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Muito Dificil 18
+console.log(listas.divisiveisPor3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Muito Dificil 18
+console.log(listas.numerosPrimos2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Facil 19
+console.log(listas.indiceDivisivel3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Facil 20
+console.log(listas.stringA(['amor', 'bola', 'cão', 'abacate', 'dado'])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Facil 20
+console.log(listas.numeroNegativo([1, -2, 5, 3, -1])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Medio 21
+console.log(listas.maiorNumeroIndex([1, -2, 5, 3, -1])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Medio 22
+console.log(listas.segundoMenorIndex([1, 9, 5, 3, 6])); 
 
 console.log('\n --------------------------------\n')

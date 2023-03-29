@@ -102,27 +102,27 @@ function media2Elementos(lista, valorMinimo, indice1, indice2){
 // Map
 
 // Fácil
-// 1. Dado um array de números, retorne um novo array contendo o dobro de cada número.
+// 10. Dado um array de números, retorne um novo array contendo o dobro de cada número.
 
 function dobroArray(lista){
   const dobro = lista.map(function(numero) {
     return numero * 2;
   });
-  return 'Facil 1 = ' + dobro;
+  return 'Facil 10 = ' + dobro;
 }
 
 
-// 2. Dado um array de strings, retorne um novo array contendo todas as strings em letra maiúscula.
+// 11. Dado um array de strings, retorne um novo array contendo todas as strings em letra maiúscula.
 
 function letraMaiscula(lista){
 
 const maiuscula = lista.map(function(palavra){
   return palavra.toUpperCase()
 })
-return 'Facil 2 = ' + maiuscula
+return 'Facil 11 = ' + maiuscula
 }
 
-// 3. Dado um array de números, retorne um novo array contendo apenas os números pares.
+// 12. Dado um array de números, retorne um novo array contendo apenas os números pares.
 
 function numerosPares(lista) {
   
@@ -136,36 +136,35 @@ function numerosPares(lista) {
   .filter(function(numero) {
     return numero !== null;
   });
-  return 'Facil 3 = ' + pares;
+  return 'Facil 12 = ' + pares;
 }
 
 
 // Médio
-// 4. Dado um array de números, retorne um novo array contendo apenas os números ímpares.
+// 13. Dado um array de números, retorne um novo array contendo apenas os números ímpares.
 
 function numerosImpares(lista){
 
   const numeroImpar = lista.map(function(numero){
     if (numero % 2 !== 0){
       return numero
-    }
-    else {
-      return null
-    }
+    } else {
+      return null}
   })
 
   .filter(function(numero){
 return numero !== null
   })
-  return 'Medio 4 = ' + numeroImpar 
+  return 'Medio 13 = ' + numeroImpar 
 }
 
-// 5. Dado um array de números, retorne um novo array contendo apenas os números que são primos.
+// 14. Dado um array de números, retorne um novo array contendo apenas os números que são primos.
 
 function numerosPrimos(lista){
   
     const primos = lista.filter(function(numero) {
-      if (numero < 2) return false; 
+      if (numero < 2) 
+      return false; 
       for (let i = 2; i < numero; i++) {
         if (numero % i === 0) {
           return false; 
@@ -173,58 +172,150 @@ function numerosPrimos(lista){
       }
       return true; 
     });
-    return 'Medio 5 = ' + primos;
+    return 'Medio 14 = ' + primos;
   }
 
 
 // Difícil
-// 6. Dado um array de números, retorne um novo array contendo apenas os números que são divisíveis por 3.
+// 15. Dado um array de números, retorne um novo array contendo apenas os números que são divisíveis por 3.
 
+function divisiveisPor3(lista){
 
+  const divisiveis = lista.map(function(numero){
+    if (numero % 3 === 0){
+      return numero 
+    } else {
+      return null }
+   })
 
-// 7. Dado um array de números, retorne um novo array contendo apenas os números que são divisíveis por pelo menos um dos dois números especificados.
+    .filter(function(numero){
+      return numero !== null
+    })
+    return 'Dificil 15 = ' + divisiveis
+  }
+
+// 16. Dado um array de números, retorne um novo array contendo apenas os números que são divisíveis por pelo menos um dos dois números especificados.
+
+function numerosDivisiveis(lista, divisor1, divisor2) {
+  return lista.filter(function(numero) {
+    return 'Dificil 16 = ' + numero % divisor1 === 0 || numero % divisor2 === 0;
+  });
+}
 
 // Muito difícil
-// 8. Dado um array de números, retorne um novo array contendo apenas os números que são primos.
-// 9. Dado um array de strings, retorne um novo array contendo apenas as strings que possuem um número especificado de caracteres.
+
+// 17. Dado um array de números, retorne um novo array contendo apenas os números que são primos.
+
+function numerosPrimos2(lista){
+  
+  const primos = lista.filter(function(numero) {
+    if (numero < 2) 
+    return false; 
+    for (let i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        return false; 
+      }
+    }
+    return true; 
+  });
+  return 'Medio 17 = ' + primos;
+}
+
+// 18. Dado um array de strings, retorne um novo array contendo apenas as strings que possuem um número especificado de caracteres.
+
+function arrayStrings(lista, tamanho) {
+  const novaLista = lista.filter(function(palavra) {
+    return palavra.length === tamanho
+  })
+  return 'Medio 18 = ' + novaLista
+}
 
 // FindIndex
 
 // Fácil
-// 1. Dado um array de números, encontre o índice do primeiro número que é divisível por 3.
-// 2. Dado um array de strings, encontre o índice da primeira string que contém a letra "a".
-// 3. Dado um array de números, encontre o índice do primeiro número que é negativo.
+// 19. Dado um array de números, encontre o índice do primeiro número que é divisível por 3.
+
+function indiceDivisivel3(lista){
+
+  /*  const num = lista.filter(numero => numero % 3 === 0 && numero > 0)
+                    .slice(0, 1)
+  return 'Facil 19 = ' + num */
+
+  
+    const index = lista.findIndex(numero => numero % 3 === 0);
+    return 'Facil 19 = ' + index;
+  } 
+
+
+// 20. Dado um array de strings, encontre o índice da primeira string que contém a letra "a".
+
+function stringA(lista){
+  const index = lista.findIndex(palavra => palavra.includes('a'));
+  return 'Facil 20 = ' + index;
+}
+
+// 21. Dado um array de números, encontre o índice do primeiro número que é negativo.
+
+function numeroNegativo(lista){
+  const num = lista.findIndex(numero => numero < 0)
+  return 'Facil 21 = ' + num
+}
 
 // Médio
-// 4. Dado um array de números, encontre o índice do maior número.
-// 5. Dado um array de números, encontre o índice do segundo menor número.
+// 22. Dado um array de números, encontre o índice do maior número.
+
+function maiorNumeroIndex(lista){
+  let valor = 0
+  const num = lista.filter(function(numero) {
+    if (numero > valor){
+      valor = numero
+    }
+    return true
+  }).findIndex(function(numero) {
+    return numero === valor
+  })
+  return 'Medio 22 = ' + num
+}
+
+
+// 23. Dado um array de números, encontre o índice do segundo menor número.
+
+function segundoMenorIndex(lista) {
+  const copiaeOrdena = lista.slice().sort((a, b) => a - b) 
+  const segundoMenor = copiaeOrdena[1] 
+  return 'Medio 23 = ' + lista.indexOf(segundoMenor) 
+}
+
 
 // Difícil
-// 6. Dado um array de números, encontre o índice do número que aparece com mais frequência.
-// 7.Dado um array de números, encontre o índice do primeiro número que é primo.
+// 24. Dado um array de números, encontre o índice do número que aparece com mais frequência.
+
+
+
+// 25.Dado um array de números, encontre o índice do primeiro número que é primo.
 
 // Muito difícil
-// 8. Dado um array de números, encontre o índice do primeiro número que é um número primo.
-// 9. Dado um array de strings, encontre o índice da primeira string que contém apenas vogais.
+// 26. Dado um array de números, encontre o índice do primeiro número que é um número primo.
+// 27. Dado um array de strings, encontre o índice da primeira string que contém apenas vogais.
 
 // Splice
 
 // Fácil
-// 1. Dado um array de números, remova o último número do array.
-// 2. Dado um array de strings, remova a primeira string do array.
-// 3. Dado um array de números, remova o último número do array e retorne-o.
+// 28. Dado um array de números, remova o último número do array.
+// 29. Dado um array de strings, remova a primeira string do array.
+// 30. Dado um array de números, remova o último número do array e retorne-o.
 
 //Médio
-// 4. Dado um array de números, remova todos os números menores que um determinado valor.
-// 5. Dado um array de números, remova todos os números maiores que um determinado valor.
+// 31. Dado um array de números, remova todos os números menores que um determinado valor.
+// 32. Dado um array de números, remova todos os números maiores que um determinado valor.
 
 // Difícil
-// 6. Dado um array de números, remova todos os números que não são primos.
-// 7. Dado um array de números, remova todos os números que possuem pelo menos um fator comum.
+// 33. Dado um array de números, remova todos os números que não são primos.
+// 34. Dado um array de números, remova todos os números que possuem pelo menos um fator comum.
 
 // Muito difícil
-// 8. Dado um array de números, remova todos os números duplicados do array.
-// 9. Dado um array de números, remova todos os números duplicados do array mantendo apenas a primeira ocorrência de cada número.
+// 35. Dado um array de números, remova todos os números duplicados do array.
+// 36. Dado um array de números, remova todos os números duplicados do array mantendo apenas a primeira ocorrência de cada número.
 module.exports = {
   somaNumeros,
   stringConcatenada,
@@ -240,4 +331,13 @@ module.exports = {
   numerosPares,
   numerosImpares,
   numerosPrimos,
+  divisiveisPor3,
+  numerosDivisiveis,
+  numerosPrimos2,
+  arrayStrings,
+  indiceDivisivel3,
+  stringA,
+  numeroNegativo,
+  maiorNumeroIndex,
+  segundoMenorIndex,
 };
