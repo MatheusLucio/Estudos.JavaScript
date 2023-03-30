@@ -290,32 +290,170 @@ function segundoMenorIndex(lista) {
 // Difícil
 // 24. Dado um array de números, encontre o índice do número que aparece com mais frequência.
 
+function maiorFrequencia(lista) {
+  let contagem = {};
+  let maxContagem = 0;
+  let numeroMaisFrequente;
 
+  lista.forEach(function(numero) {
+    contagem[numero] = (contagem[numero] || 0) + 1;
+    if (contagem[numero] > maxContagem) {
+      maxContagem = contagem[numero];
+      numeroMaisFrequente = numero;
+    }
+  });
+
+  let indiceMaisFrequente;
+  let maxContagemIndice = 0;
+  for (let i = 0; i < lista.length; i++) {
+    if (lista[i] === numeroMaisFrequente) {
+      maxContagemIndice++;
+      if (maxContagemIndice === maxContagem) {
+        indiceMaisFrequente = i;
+        break;
+      }
+    }
+  }
+
+  return 'Muito Dificl 24 = ' + indiceMaisFrequente;
+}
 
 // 25.Dado um array de números, encontre o índice do primeiro número que é primo.
 
+function numerosPrimos3(lista){
+  
+  const primos = lista.filter(function(numero) {
+    if (numero < 2) 
+    return false; 
+    for (let i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        return false; 
+      }
+    }
+    return true; 
+  });
+  return 'Dificil 25 = ' + lista.indexOf(primos[0]);
+}
+
 // Muito difícil
 // 26. Dado um array de números, encontre o índice do primeiro número que é um número primo.
+
+function numerosPrimos4(lista){
+  
+  const primos = lista.filter(function(numero) {
+    if (numero < 2) 
+    return false; 
+    for (let i = 2; i < numero; i++) {
+      if (numero % i === 0) {
+        return false; 
+      }
+    }
+    return true; 
+  });
+  return 'Muito Dificil 26 = ' + lista.indexOf(primos[0]);
+}
+
 // 27. Dado um array de strings, encontre o índice da primeira string que contém apenas vogais.
 
+function todasVogais(lista){
+
+  const aEIOU = lista.filter(palavra => palavra.indexOf('a') != -1 && palavra.indexOf('e') != -1 && palavra.indexOf('i') != -1 && palavra.indexOf('o') != -1 && palavra.indexOf('u') != -1)
+  return 'muito Dificil 27 = ' + lista.indexOf(aEIOU[0])
+
+ }
 // Splice
 
 // Fácil
 // 28. Dado um array de números, remova o último número do array.
+
+function removerUltimo(lista){
+const array = lista.splice(-1, 1)
+return 'Facil 28 = ' + array
+
+}
+
 // 29. Dado um array de strings, remova a primeira string do array.
+
+function primeiraString(lista){
+const array = lista.splice(1, 1)
+return 'Facil 29 = ' + array
+
+}
+
 // 30. Dado um array de números, remova o último número do array e retorne-o.
+
+function removerUltimoRetornar(lista){
+  const array = lista.splice(-1, 1)
+  return 'Facil 30 = ' + array[0]
+  
+  }
 
 //Médio
 // 31. Dado um array de números, remova todos os números menores que um determinado valor.
+
+function removendoNumerosMenores(lista, valor) {
+  const novaLista = lista.filter(numero => numero >= valor);
+  return 'Medio 31 = ' +novaLista;
+}
+
 // 32. Dado um array de números, remova todos os números maiores que um determinado valor.
+
+function removendoNumerosMaiores(lista, valor) {
+  const novaLista = lista.filter(numero => numero <= valor);
+  return 'Medio 32 = ' + novaLista;
+}
 
 // Difícil
 // 33. Dado um array de números, remova todos os números que não são primos.
+
+function removerNaoPrimos(lista) {
+  for (let i = 0; i < lista.length; i++) {
+    if (!ehPrimo(lista[i])) {
+      lista.splice(i, 1);
+      i--;
+    }
+  }
+  return 'Dificil 33 = ' + lista;
+}
+
+function ehPrimo(numero) {
+  if (numero < 2) {
+    return false;
+  }
+  for (let i = 2; i <= Math.sqrt(numero); i++) {
+    if (numero % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+
 // 34. Dado um array de números, remova todos os números que possuem pelo menos um fator comum.
+
+function removendoFatorComum(lista) {
+  return lista.filter(function(numero) {
+    let fatores = [];
+
+    for (let i = 2; i <= numero; i++) {
+      if (numero % i === 0) {
+        fatores.push(i);
+      }
+    }
+
+    return fatores.length < 2;
+  });
+}
+
 
 // Muito difícil
 // 35. Dado um array de números, remova todos os números duplicados do array.
-// 36. Dado um array de números, remova todos os números duplicados do array mantendo apenas a primeira ocorrência de cada número.
+
+function removendoFrequencia(lista){
+  return lista.filter(function(numero, indice) {
+  return lista.indexOf(numero) === indice;
+  });
+}
+
 module.exports = {
   somaNumeros,
   stringConcatenada,
@@ -340,4 +478,16 @@ module.exports = {
   numeroNegativo,
   maiorNumeroIndex,
   segundoMenorIndex,
+  maiorFrequencia,
+  numerosPrimos3,
+  numerosPrimos4,
+  todasVogais,
+  removerUltimo,
+  primeiraString,
+  removerUltimoRetornar,
+  removendoNumerosMaiores,
+  removendoNumerosMenores,
+  removerNaoPrimos,
+  removendoFatorComum,
+  removendoFrequencia,
 };
