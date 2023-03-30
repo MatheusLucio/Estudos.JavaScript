@@ -336,7 +336,7 @@ function numerosPrimos3(lista){
 }
 
 // Muito difícil
-// 26. Dado um array de números, encontre o índice do primeiro número que é um número primo.
+// 26. Dado um array de números, encontre o índice do terceiro número que é um número primo.
 
 function numerosPrimos4(lista){
   
@@ -350,7 +350,7 @@ function numerosPrimos4(lista){
     }
     return true; 
   });
-  return 'Muito Dificil 26 = ' + lista.indexOf(primos[0]);
+  return 'Muito Dificil 26 = ' + lista.indexOf(primos[2]);
 }
 
 // 27. Dado um array de strings, encontre o índice da primeira string que contém apenas vogais.
