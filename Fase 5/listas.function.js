@@ -396,6 +396,7 @@ function removendoNumerosMenores(lista, valor) {
   return 'Medio 31 = ' + novaLista;
 }
 
+// Dificil
 // 32. Dado um array de números, remova todos os números maiores que um determinado valor.
 
 function removendoNumerosMaiores(lista, valor) {
