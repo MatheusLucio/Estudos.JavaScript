@@ -393,7 +393,7 @@ function removerUltimoRetornar(lista){
 
 function removendoNumerosMenores(lista, valor) {
   const novaLista = lista.filter(numero => numero >= valor);
-  return 'Medio 31 = ' +novaLista;
+  return 'Medio 31 = ' + novaLista;
 }
 
 // 32. Dado um array de números, remova todos os números maiores que um determinado valor.
@@ -408,7 +408,7 @@ function removendoNumerosMaiores(lista, valor) {
 
 function removerNaoPrimos(lista) {
   for (let i = 0; i < lista.length; i++) {
-    if (!ehPrimo(lista[i])) {
+    if (!auxiliarPrimo(lista[i])) {
       lista.splice(i, 1);
       i--;
     }
@@ -416,7 +416,7 @@ function removerNaoPrimos(lista) {
   return 'Dificil 33 = ' + lista;
 }
 
-function ehPrimo(numero) {
+function auxiliarPrimo(numero) {
   if (numero < 2) {
     return false;
   }
@@ -428,6 +428,7 @@ function ehPrimo(numero) {
   return true;
 }
 
+// Muito Dificil 
 // 34. Dado um array de números, remova todos os números que possuem pelo menos um fator comum.
 
 function removendoFatorComum(lista) {
@@ -443,7 +444,6 @@ function removendoFatorComum(lista) {
     return fatores.length < 2;
   });
 }
-
 
 // Muito difícil
 // 35. Dado um array de números, remova todos os números duplicados do array.
