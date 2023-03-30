@@ -45,7 +45,9 @@ console.log(listas.numeroFrequencia([1, 2, 2, 3, 4, 4, 4, 5, 5]));
 console.log('\n --------------------------------\n')
 
 // Exercicio Muito Dificil 9
-console.log(listas.media2Elementos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.media2Elementos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 5, 10, 11)); 
+console.log(listas.media2Elementos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 5, 10, 2)); 
+console.log(listas.media2Elementos([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 5, 3, 2)); 
 
 console.log('\n --------------------------------\n')
 
@@ -80,17 +82,17 @@ console.log(listas.divisiveisPor3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14
 console.log('\n --------------------------------\n')
 
 // Exercicio Dificil 16
-console.log(listas.numerosDivisiveis([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.numerosDivisiveis([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 4, 8)); 
 
 console.log('\n --------------------------------\n')
 
 // Exercicio Muito Dificil 17
-console.log(listas.divisiveisPor3([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.numerosPrimos2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
 
 console.log('\n --------------------------------\n')
 
 // Exercicio Muito Dificil 18
-console.log(listas.numerosPrimos2([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.arrayStrings([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
 
 console.log('\n --------------------------------\n')
 
@@ -155,12 +157,12 @@ console.log(listas.removerUltimoRetornar([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12,
 console.log('\n --------------------------------\n')
 
 // Exercicio Medio 31
-console.log(listas.removendoNumerosMenores([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.removendoNumerosMenores([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 10)); 
 
 console.log('\n --------------------------------\n')
 
 // Exercicio Medio 32
-console.log(listas.removendoNumerosMaiores([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+console.log(listas.removendoNumerosMaiores([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], 10)); 
 
 console.log('\n --------------------------------\n')
 
@@ -179,5 +181,5 @@ console.log(listas.removendoFrequencia([1, 2, 2, 3, 4, 4, 4, 5, 5]));
 
 console.log('\n --------------------------------\n')
 
-// Exercicio Muito Dificil 36
-console.log(listas.removendoDuplicatas([1, 2, 2, 3, 4, 4, 4, 5, 5])); 
+// // Exercicio Muito Dificil 36
+// console.log(listas.removendoDuplicatas([1, 2, 2, 3, 4, 4, 4, 5, 5])); 
