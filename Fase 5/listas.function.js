@@ -196,9 +196,9 @@ function divisiveisPor3(lista){
 
 // 16. Dado um array de números, retorne um novo array contendo apenas os números que são divisíveis por pelo menos um dos dois números especificados.
 
-function numerosDivisiveis(lista, divisor1, divisor2) {
+function numerosDivisiveis(lista, num1, num2) {
   return lista.filter(function(numero) {
-    return 'Dificil 16 = ' + numero % divisor1 === 0 || numero % divisor2 === 0;
+    return 'Dificil 16 = ' + numero % num1 === 0 || numero % num2 === 0;
   });
 }
 
