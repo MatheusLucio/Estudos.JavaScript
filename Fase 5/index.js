@@ -181,5 +181,17 @@ console.log(listas.removendoFrequencia([1, 2, 2, 3, 4, 4, 4, 5, 5]));
 
 console.log('\n --------------------------------\n')
 
+
+// Exercicio Bernado
+console.log(listas.somaNumerosBernado([1, 2, 2, 3, 4, 4, 4, 5, 5])); 
+
+console.log('\n --------------------------------\n')
+
+// Exercicio Bernado
+console.log(listas.batata([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])); 
+
+
+console.log('\n --------------------------------\n')
+
 // // Exercicio Muito Dificil 36
 // console.log(listas.removendoDuplicatas([1, 2, 2, 3, 4, 4, 4, 5, 5])); 
