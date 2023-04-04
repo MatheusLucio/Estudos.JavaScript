@@ -8,3 +8,4 @@
 // Crie uma função que receba um objeto usuário e retorne uma string com uma lista HTML das permissões do usuário agrupadas por descrição, cada uma em um elemento <li> e com a descrição da permissão como um cabeçalho <h2>.
 // Crie uma função que receba um objeto usuário e um objeto de grupo como argumentos e adicione o grupo às permissões do usuário (ou seja, adicione o objeto de grupo ao array de permissões do usuário).
 // Crie uma função que receba um objeto usuário e um objeto de grupo como argumentos e remova o grupo das permissões do usuário (ou seja, remova o objeto de grupo do array de permissões do usuário).
+// teste
