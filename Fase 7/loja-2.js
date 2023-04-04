@@ -48,17 +48,40 @@ console.log(removerProduto(cliente1, produto2))
 
 // Crie uma função que receba um objeto cliente e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 
+function pedidoComFiltro (cliente, numero){
+    const listaFinal = cliente.pedido
+    .filter((pedido) => {
+        return cliente.pedido > numero
+    })
+    .map((pedido) => {
+        return cliente
+    })
+    return listaFinal
+}
 
-
+console.log(pedidoComFiltro(cliente1, 1))
 
 // Crie uma função que receba um objeto cliente e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou menos do que o número fornecido.
 
+function pedidoComFiltro (cliente, numero){
+    const listaFinal = cliente.pedido
+    .filter((pedido) => {
+        return cliente.pedido < numero
+    })
+    .map((pedido) => {
+        return cliente
+    })
+    return listaFinal
+}
 
+console.log(pedidoComFiltro(cliente1, 1))
 
 
 // Crie uma função que receba um objeto cliente e retorne uma string com uma lista HTML dos pedidos do cliente, cada um em um elemento <li> com o nome do produto, a quantidade e o preço total do pedido.
 
-
+function pedidoHtml(pedido){
+    
+}
 
 
 // Crie uma função que receba um objeto cliente e retorne uma string com uma lista HTML dos pedidos do cliente agrupados por data, cada um em um elemento <li> com o nome do produto, a quantidade e o preço total do pedido.
