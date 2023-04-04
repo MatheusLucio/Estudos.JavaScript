@@ -4,6 +4,13 @@ const produto1 = {
     valor: 200
 }
 
+const produto2 = {
+    valor: 150
+}
+
+const produto3 = {
+    valor:80
+}
 
 const cliente1 = {
     nome: "João Gabriel",
@@ -14,18 +21,30 @@ const cliente1 = {
 
 // Crie uma função que receba um objeto cliente e retorne o total de gastos do cliente na loja (soma dos totais de todos os pedidos do cliente).
 
+function gastoTotal(pedido){
+    return pedido.valor
+    .reduce((acc, valorTotal) => acc + valorTotal, 0)
+}
 
-
+console.log(gastoTotal(cliente1))
 
 // Crie uma função que receba um objeto cliente e um objeto de pedido como argumentos e adicione o pedido ao array de pedidos do cliente.
 
+function adicionarPedido(cliente, pedido){
+    cliente.pedido.push(pedido)
+    return cliente
+}
 
-
+console.log(adicionarPedido(cliente1, produto3))
 
 // Crie uma função que receba um objeto cliente e um objeto de pedido como argumentos e remova o pedido do array de pedidos do cliente.
 
+function removerProduto(cliente, produto){ 
+const clienteSemPedido = cliente.remove(produto)
+return clienteSemPedido
+}
 
-
+console.log(removerProduto(cliente1, produto2))
 
 // Crie uma função que receba um objeto cliente e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 
