@@ -16,26 +16,22 @@ const produto2 = {
 const pedido1 = {
   identificador: 001,
   data: '01/04/2023',
+  quantidade: 2,
   produtos: [produto1, produto1],
+  total: 2500
 };
 
 const pedido2 = {
   identificador: 001,
   data: '01/04/2023',
+  quantidade: 4,
   produtos: [
-    produto1,
-    produto1,
-    produto1,
-    produto1,
-    produto1,
-    produto1,
-    produto1,
-    produto1,
     produto1,
     produto1,
     produto1,
     produto2,
   ],
+  total:13950
 };
 
 // Crie uma função que receba um objeto produto como argumento e retorne o preço total (preço x quantidade em estoque).
@@ -47,10 +43,9 @@ function verificacaoEstoquePreco(produto) {
 
 // console.log('------------------');
 
-console.log(verificacaoEstoquePreco(produto1));
-console.log(verificacaoEstoquePreco(produto2));
+// console.log(verificacaoEstoquePreco(produto1));
+// console.log(verificacaoEstoquePreco(produto2));
 
-// return;
 // Crie uma função que receba um objeto pedido como argumento e retorne o total do pedido (soma dos preços totais de todos os produtos do pedido).
 
 function totalPedido(pedido) {
@@ -76,21 +71,75 @@ function totalPedido2(pedido) {
     .reduce((acumulador, valorAtual) => acumulador + valorAtual, 0);
 }
 
-console.log(totalPedido(pedido1));
-console.log(totalPedido2(pedido1));
-console.log(totalPedido(pedido2));
+//console.log(totalPedido(pedido1));
+//console.log(totalPedido2(pedido1));
+//console.log(totalPedido(pedido2));
 
-return;
+// Crie uma função que receba um objeto pedido como argumento e retorne uma string com a lista de produtos do pedido.
 
-// Crie uma função que receba um objeto pedido como argumento e retorne uma string com a lista de produtos do pedido, cada um em uma linha, no formato "nome do produto - quantidade x preço unitário = preço total".
+function listarProdutos(pedido) {
+  const produtos = pedido.produtos;
+  const listaProdutos = produtos.map((produto) => {
+    return produto.nome 
+  });
+  return listaProdutos
+}
 
-function stringPedido() {}
+//console.log(listarProdutos(pedido1))
+//console.log(listarProdutos(pedido2))
 
-console.log(stringPedido(pedido1));
+
 // Crie uma função que receba um objeto pedido e um objeto produto como argumentos e adicione o produto ao array de produtos do pedido.
 
-// Crie uma função que receba um objeto pedido e um objeto produto como argumentos e remova o produto do array de produtos do pedido.
+function adicionarObjeto(pedido, produto){
+    pedido.produtos.push(produto);
+    return pedido
+  }
+
+  //console.log(adicionarObjeto(pedido1, 'Mesa Gamer 2m x 1m RGB'))
+
+// Crie uma função que receba um objeto pedido e um objeto produto como argumentos e remova o primeiro produto do array de produtos do pedido.
+
+function removerProduto(pedido, produto){
+pedido.produtos.splice(produto, 1)
+return pedido
+}
+
+//console.log(removerProduto(pedido1))
+//console.log(removerProduto(pedido2))
+
 
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 
+  
+
+    function filtroPedido(pedido, numero) {
+      const listaProdutos = pedido.produtos
+        .filter((produto) => {
+          return produto.quantidade > numero;
+        })
+        .map((produto) => {
+          return produto.nome;
+        });
+      return listaProdutos;
+    }
+
+//console.log(filtroPedido(pedido1, 1))
+//console.log(filtroPedido(pedido2, 2))
+
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou menos do que o número fornecido.
+
+
+function filtroPedido1(pedido, numero) {
+  const listaProdutos = pedido.produtos
+    .filter((produto) => {
+      return produto.quantidade < numero;
+    })
+    .map((produto) => {
+      return produto.nome;
+    });
+  return listaProdutos;
+}
+
+//console.log(filtroPedido1(pedido1, 1))
+//console.log(filtroPedido1(pedido2, 2))
