@@ -47,8 +47,8 @@ function verificacaoEstoquePreco(produto) {
 
 // console.log('------------------');
 
-// console.log(verificacaoEstoquePreco(produto1));
-// console.log(verificacaoEstoquePreco(produto2));
+console.log(verificacaoEstoquePreco(produto1));
+console.log(verificacaoEstoquePreco(produto2));
 
 // return;
 // Crie uma função que receba um objeto pedido como argumento e retorne o total do pedido (soma dos preços totais de todos os produtos do pedido).
