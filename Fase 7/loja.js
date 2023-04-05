@@ -1,11 +1,13 @@
 // Crie um objeto que represente um produto, com as propriedades nome, preço e quantidade em estoque.
 
 const produto1 = {
+  identificador: 001,
   nome: 'Cadeira Gamer LRS Gamer X PRO',
   preco: 1250,
   estoque: 42,
 };
 const produto2 = {
+  identificador: 002,
   nome: 'Mouse Gamer LRS Gamer X PRO',
   preco: 200,
   estoque: 55,
@@ -17,7 +19,7 @@ const pedido1 = {
   identificador: 001,
   data: '01/04/2023',
   quantidade: 2,
-  produtos: [produto1, produto1],
+  produtos: [produto1, produto1, produto2],
 };
 
 const pedido2 = {
@@ -115,18 +117,35 @@ function removerProduto(pedido, produto) {
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 // Refazer
 function filtroPedido(pedido, numero) {
-  const listaProdutos = pedido.produtos
-    .filter((produto) => {
-      return produto.quantidade > numero;
-    })
-    .map((produto) => {
-      return produto.nome;
-    });
-  return listaProdutos;
+  const meusProduto = pedido.produtos; // [produto1, produto1, produto2]
+
+  let listaProdutosComQuantidades = [];
+
+  // Iniciar um for para percorrer o array de produtos e contar quantas vezes cada produto aparece
+  meusProduto.forEach((produto) => {
+    // Pegar o produto com a sua quantidade
+    const indexItemNaListaDeQuantidades = listaProdutosComQuantidades.findIndex(
+      (produtoComQuantidade) =>
+        produtoComQuantidade.identificador === produto.identificador
+    );
+
+    if (indexItemNaListaDeQuantidades === -1) {
+      listaProdutosComQuantidades.push({
+        identificador: produto.identificador,
+        nome: produto.nome,
+        quantidade: 1,
+      });
+    } else {
+      // listaProdutosComQuantidades[indexItemNaListaDeQuantidades].quantidade = listaProdutosComQuantidades[indexItemNaListaDeQuantidades].quantidade + 1;
+      listaProdutosComQuantidades[indexItemNaListaDeQuantidades].quantidade++;
+    }
+  });
+
+  return listaProdutosComQuantidades;
 }
 
-console.log(filtroPedido(pedido1, 1))
-console.log(filtroPedido(pedido2, 2))
+console.log(filtroPedido(pedido1, 1));
+// console.log(filtroPedido(pedido2, 2));
 
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou menos do que o número fornecido.
 
