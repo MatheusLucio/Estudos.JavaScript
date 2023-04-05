@@ -111,8 +111,6 @@ return pedido
 
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 
-  
-
     function filtroPedido(pedido, numero) {
       const listaProdutos = pedido.produtos
         .filter((produto) => {
