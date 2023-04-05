@@ -108,21 +108,28 @@ function removerProduto(pedido, produto) {
   });
   return meuPedido;
 }
-// console.log('Meu pedido', pedido2);
-// console.log(removerProduto(pedido2, produto1));
-// console.log(removerProduto(pedido2, produto2));
+
+// Crie uma função que receba um objeto pedido e um objeto produto como argumentos e remova o primeiro produto do array de produtos do pedido.
+
+function removerProduto2(pedido, produto) {
+  const index = pedido.produtos.indexOf(produto)
+  if (index > -1) {
+    pedido.produtos.shift();
+    return `${produto}`
+  } else {
+    return `${produto}`
+  }
+}
+
+//console.log('Meu pedido', pedido2);
+//console.log(removerProduto2(pedido2, produto1));
+//console.log(removerProduto2(pedido1, produto2));
 
 // Crie uma função que receba um objeto pedido e um número como argumentos e retorne um array com os nomes dos produtos que o cliente comprou mais do que o número fornecido.
 // Refazer
 function filtroPedido(pedido, numero) {
-  const listaProdutos = pedido.produtos
-    .filter((produto) => {
-      return produto.quantidade > numero;
-    })
-    .map((produto) => {
-      return produto.nome;
-    });
-  return listaProdutos;
+return pedido.produtos.map()
+
 }
 
 console.log(filtroPedido(pedido1, 1))
