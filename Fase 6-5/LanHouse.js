@@ -14,7 +14,7 @@ cada um com um nome, um e-mail e um número de telefone.
 const computador1 = {
   id: 1,
   sistemaOperacional: 'Windows',
-  softwares: ['Chrome', 'AutoCad', 'Discord'],
+  softwares: ['Xbox', 'AutoCad', 'Discord'],
 };
 
 const computador2 = {
@@ -26,7 +26,7 @@ const computador2 = {
 const computador3 = {
   id: 3,
   sistemaOperacional: 'Windows',
-  softwares: ['Chrome', 'Blitz', 'Valorant'],
+  softwares: ['Node', 'Blitz', 'Valorant'],
 };
 
 const computador4 = {
@@ -44,7 +44,7 @@ const computador5 = {
 const computador6 = {
   id: 6,
   sistemaOperacional: 'Linux',
-  softwares: ['Chrome'],
+  softwares: ['Chrome', 'Instagram'],
 };
 
 // Crie um objeto que represente um cliente, com as propriedades nome, email e telefone.
@@ -56,37 +56,37 @@ const computador6 = {
 const cliente1 = {
   id: 1,
   nome: 'João',
-  email: 'email@email.com',
+  email: 'joao@email.com',
   telefone: '123456789',
 };
 const cliente2 = {
   id: 2,
   nome: 'Maria',
-  email: 'email@email.com',
+  email: 'maria@email.com',
   telefone: '123456789',
 };
 const cliente3 = {
   id: 3,
   nome: 'José',
-  email: 'email@email.com',
+  email: 'jose@email.com',
   telefone: '123456789',
 };
 const cliente4 = {
   id: 4,
   nome: 'Carlos',
-  email: 'email@email.com',
+  email: 'carlos@email.com',
   telefone: '123456789',
 };
 const cliente5 = {
   id: 5,
   nome: 'Ana',
-  email: 'email@email.com',
+  email: 'ana@email.com',
   telefone: '123456789',
 };
 const cliente6 = {
   id: 6,
   nome: 'Paula',
-  email: 'email@email.com',
+  email: 'paula@email.com',
   telefone: '123456789',
 };
 
@@ -95,34 +95,127 @@ const cliente6 = {
 // Fase 1
 
 // Crie um array de objetos que representam os computadores da lan house.
+
+function exibirArray(computador1){
+  return computador1
+}
+
+console.log(exibirArray())
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores como argumento e retorne um novo array contendo apenas os computadores com sistema operacional Windows.
+
+function exibirWindows(computador1){
+  
+
+}
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores como argumento e retorne um novo array contendo apenas os computadores com pelo menos um software instalado.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores como argumento e retorne um novo array contendo apenas os computadores com pelo menos dois softwares instalados.
+
+
+console.log('------------------------------------------')
 // Crie um array de objetos que representam os clientes da lan house.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes como argumento e retorne um novo array contendo apenas os clientes com nome começando com a letra "A".
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes como argumento e retorne um novo array contendo apenas os clientes com pelo menos um número de telefone cadastrado.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes como argumento e retorne um novo array contendo apenas os clientes com pelo menos um e-mail válido (ou seja, que contém "@" e ".").
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores e um número como argumentos e retorne um novo array contendo apenas os computadores com ID menor do que o número fornecido.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes e um objeto cliente como argumentos e adicione o cliente ao array de clientes.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores e um objeto computador como argumentos e adicione o computador ao array de computadores.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes e um objeto cliente como argumentos e remova o cliente do array de clientes.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores e um objeto computador como argumentos e remova o computador do array de computadores.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes e um objeto cliente como argumentos e retorne true se o cliente já está cadastrado e false caso contrário.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores e um objeto computador como argumentos e retorne true se o computador já está cadastrado e false caso contrário.
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes e um objeto cliente como argumentos e atualize as informações do cliente (nome, e-mail e telefone).
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de computadores e um objeto computador como argumentos e atualize as informações do computador (sistema operacional e lista de softwares).
+
+
+console.log('------------------------------------------')
 // Crie uma função que receba um array de clientes e um objeto cliente como argumentos e retorne um novo array contendo todos os clientes, exceto o cliente fornecido como argumento.
+
+
+console.log('------------------------------------------')
 // Crie um objeto "computador1" com as propriedades "marca", "modelo" e "memoriaRAM", e atribua valores a cada uma delas.
+
+
+console.log('------------------------------------------')
 // Crie um objeto "cliente1" com as propriedades "nome", "email" e "idade", e atribua valores a cada uma delas.
+
+
+console.log('------------------------------------------')
 // Crie um array "computadores" e adicione os objetos "computador1", "computador2" e "computador3" a ele.
+
+
+console.log('------------------------------------------')
 // Crie um array "clientes" e adicione os objetos "cliente1", "cliente2" e "cliente3" a ele.
+
+
+console.log('------------------------------------------')
 // Acesse a propriedade "marca" do objeto "computador1".
+
+
+console.log('------------------------------------------')
 // Acesse a propriedade "email" do objeto "cliente1".
+
+
+console.log('------------------------------------------')
 // Adicione um novo objeto "computador4" ao array "computadores".
+
+
+console.log('------------------------------------------')
 // Adicione um novo objeto "cliente4" ao array "clientes".
+
+
+console.log('------------------------------------------')
 // Altere a propriedade "memoriaRAM" do objeto "computador1".
+
+
+console.log('------------------------------------------')
 // Remova o objeto "cliente2" do array "clientes".
 
+
+
+console.log('------------------------------------------')
 // Fase 2
 
 // Médios
