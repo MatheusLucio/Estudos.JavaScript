@@ -238,28 +238,28 @@ let emprestimos = [
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente7.id,
+        clienteId: cliente1.id,
         livroId: livro7.id,
         data: '2023-05-16',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente8.id,
+        clienteId: cliente3.id,
         livroId: livro8.id,
         data: '2023-05-17',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente9.id,
+        clienteId: cliente2.id,
         livroId: livro9.id,
         data: '2023-05-18',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente10.id,
+        clienteId: cliente4.id,
         livroId: livro10.id,
         data: '2023-05-19',
     },
@@ -307,28 +307,28 @@ let emprestimos = [
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente7.id,
+        clienteId: cliente4.id,
         livroId: livro17.id,
         data: '2023-05-26',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente8.id,
+        clienteId: cliente5.id,
         livroId: livro18.id,
         data: '2023-05-27',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente9.id,
+        clienteId: cliente6.id,
         livroId: livro19.id,
         data: '2023-05-28',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente10.id,
+        clienteId: cliente4.id,
         livroId: livro20.id,
         data: '2023-05-29',
     },
@@ -377,28 +377,28 @@ let emprestimos = [
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente7.id,
+        clienteId: cliente5.id,
         livroId: livro4.id,
         data: '2023-06-05',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente8.id,
+        clienteId: cliente4.id,
         livroId: livro3.id,
         data: '2023-06-06',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente9.id,
+        clienteId: cliente3.id,
         livroId: livro2.id,
         data: '2023-06-07',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente10.id,
+        clienteId: cliente1.id,
         livroId: livro1.id,
         data: '2023-06-08',
     },
@@ -408,8 +408,34 @@ let emprestimos = [
 
 
 // Crie uma função que crie um novo livro.
+
+function novoLivro (id, titulo, autor, paginas){
+    return {
+        id: id,
+        titulo: titulo,
+        autor: autor,
+        paginas: paginas
+    }
+}
+
+console.log(novoLivro(10, 'GTA V', 'Rockstar', 241 ))
+
 // Crie uma função que obtenha uma lista de todos os livros.
+
+function listaLivros(){
+    return livros
+}
+
+console.log(listaLivros())
+
 // Crie uma função que obtenha um livro específico por seu ID.
+
+function obterLivroPorId(id) {
+    return livros.find(livro => livro.id === id);
+  }
+
+  console.log(obterLivroPorId(5))
+
 // Crie uma função que atualize as informações de um livro existente.
 // Crie uma função que exclua um livro existente.
 // Crie uma função que crie um novo cliente.
