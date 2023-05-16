@@ -437,7 +437,27 @@ function obterLivroPorId(id) {
   console.log(obterLivroPorId(5))
 
 // Crie uma função que atualize as informações de um livro existente.
+
+function atualizarLivro(id, novasInformacoes) {
+    const livroEncontrado = livros.find((livro) => livro.id === id);
+  
+    if (livroEncontrado) {
+      livroEncontrado = { ...livroEncontrado, ...novasInformacoes };
+    }
+  }
+
+  let novasInformacoes = {
+    titulo: 'O fim do dia',
+    autor: 'Caio',
+    numeroDePaginas: 200,
+  };
+  
+  atualizarLivro(3, novasInformacoes);
+
 // Crie uma função que exclua um livro existente.
+
+
+
 // Crie uma função que crie um novo cliente.
 // Crie uma função que obtenha uma lista de todos os clientes.
 // Crie uma função que obtenha um cliente específico por seu ID.
