@@ -196,217 +196,217 @@ let clientes = [
 let emprestimos = [
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente1.id,
-        livroId: livro1.id,
+        clienteId: clientes[1].id,
+        livroId: livros[1].id,
         data: '2023-05-10',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente2.id,
-        livroId: livro2.id,
+        clienteId: clientes[2].id,
+        livroId: livros[2].id,
         data: '2023-05-11',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente3.id,
-        livroId: livro3.id,
+        clienteId: clientes[3].id,
+        livroId: livros[3].id,
         data: '2023-05-12',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro4.id,
+        clienteId: clientes[4].id,
+        livroId: livros[4].id,
         data: '2023-05-13',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente5.id,
-        livroId: livro5.id,
+        clienteId: clientes[5].id,
+        livroId: livros[5].id,
         data: '2023-05-14',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente6.id,
-        livroId: livro6.id,
+        clienteId: clientes[6].id,
+        livroId: livros[6].id,
         data: '2023-05-15',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente1.id,
-        livroId: livro7.id,
+        clienteId: clientes[1].id,
+        livroId: livros[7].id,
         data: '2023-05-16',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente3.id,
-        livroId: livro8.id,
+        clienteId: clientes[3].id,
+        livroId: livros[8].id,
         data: '2023-05-17',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente2.id,
-        livroId: livro9.id,
+        clienteId: clientes[2].id,
+        livroId: livros[9].id,
         data: '2023-05-18',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro10.id,
+        clienteId: clientes[4].id,
+        livroId: livros[10].id,
         data: '2023-05-19',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente1.id,
-        livroId: livro11.id,
+        clienteId: clientes[1].id,
+        livroId: livros[11].id,
         data: '2023-05-20',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente2.id,
-        livroId: livro12.id,
+        clienteId: clientes[2].id,
+        livroId: livros[12].id,
         data: '2023-05-21',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente3.id,
-        livroId: livro13.id,
+        clienteId: clientes[3].id,
+        livroId: livros[13].id,
         data: '2023-05-22',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro14.id,
+        clienteId: clientes[4].id,
+        livroId: livros[14].id,
         data: '2023-05-23',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente5.id,
-        livroId: livro15.id,
+        clienteId: clientes[5].id,
+        livroId: livros[15].id,
         data: '2023-05-24',
     },
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente6.id,
-        livroId: livro16.id,
+        clienteId: clientes[6].id,
+        livroId: livros[16].id,
         data: '2023-05-25',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro17.id,
+        clienteId: clientes[4].id,
+        livroId: livros[17].id,
         data: '2023-05-26',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente5.id,
-        livroId: livro18.id,
+        clienteId: clientes[5].id,
+        livroId: livros[18].id,
         data: '2023-05-27',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente6.id,
-        livroId: livro19.id,
+        clienteId: clientes[6].id,
+        livroId: livros[19].id,
         data: '2023-05-28',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro20.id,
+        clienteId: clientes[4].id,
+        livroId: livros[18].id,
         data: '2023-05-29',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente1.id,
-        livroId: livro10.id,
+        clienteId: clientes[1].id,
+        livroId: livros[10].id,
         data: '2023-05-30',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente2.id,
-        livroId: livro9.id,
+        clienteId: clientes[2].id,
+        livroId: livros[9].id,
         data: '2023-05-31',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente3.id,
-        livroId: livro8.id,
+        clienteId: clientes[3].id,
+        livroId: livros[8].id,
         data: '2023-06-01',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro7.id,
+        clienteId: clientes[4].id,
+        livroId: livros[7].id,
         data: '2023-06-02',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente5.id,
-        livroId: livro6.id,
+        clienteId: clientes[5].id,
+        livroId: livros[6].id,
         data: '2023-06-03',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente6.id,
-        livroId: livro5.id,
+        clienteId: clientes[6].id,
+        livroId: livros[5].id,
         data: '2023-06-04',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente5.id,
-        livroId: livro4.id,
+        clienteId: clientes[5].id,
+        livroId: livros[4].id,
         data: '2023-06-05',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente4.id,
-        livroId: livro3.id,
+        clienteId: clientes[4].id,
+        livroId: livros[3].id,
         data: '2023-06-06',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente3.id,
-        livroId: livro2.id,
+        clienteId: clientes[3].id,
+        livroId: livros[2].id,
         data: '2023-06-07',
     },
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: cliente1.id,
-        livroId: livro1.id,
+        clienteId: clientes[1].id,
+        livroId: livros[1].id,
         data: '2023-06-08',
     },
 ];
 
 // Basico de todos
 
-
+console.log('\n  --------------------------------\n')
 // Crie uma função que crie um novo livro.
 
 function novoLivro (id, titulo, autor, paginas){
@@ -420,6 +420,8 @@ function novoLivro (id, titulo, autor, paginas){
 
 console.log(novoLivro(10, 'GTA V', 'Rockstar', 241 ))
 
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha uma lista de todos os livros.
 
 function listaLivros(){
@@ -428,56 +430,207 @@ function listaLivros(){
 
 console.log(listaLivros())
 
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha um livro específico por seu ID.
 
 function obterLivroPorId(id) {
-    return livros.find(livro => livro.id === id);
+    return livros.find(livro => livro.id === id)
   }
 
   console.log(obterLivroPorId(5))
 
+  console.log('\n --------------------------------\n')
+
 // Crie uma função que atualize as informações de um livro existente.
 
-function atualizarLivro(id, novasInformacoes) {
-    const livroEncontrado = livros.find((livro) => livro.id === id);
-  
-    if (livroEncontrado) {
-      livroEncontrado = { ...livroEncontrado, ...novasInformacoes };
-    }
-  }
 
-  let novasInformacoes = {
-    titulo: 'O fim do dia',
-    autor: 'Caio',
-    numeroDePaginas: 200,
-  };
-  
-  atualizarLivro(3, novasInformacoes);
+
+console.log('\n --------------------------------\n')
 
 // Crie uma função que exclua um livro existente.
 
+function excluirLivroPorId(id) {
+   return livros = livros.filter((livro) => livro.id !== id)
+  }
 
+  console.log(excluirLivroPorId(5))
+
+  console.log('\n --------------------------------\n')
 
 // Crie uma função que crie um novo cliente.
+
+function criarCliente (id, nome, email, telefone){
+    const novoCliente = { 
+    id: id,
+    nome: nome,
+    email: email,
+    telefone: telefone
+    }
+return novoCliente
+}
+
+console.log(criarCliente(11,'Matheus Lucio', 'matheuslucio@gmail.com' , '3363-4488' ))
+
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha uma lista de todos os clientes.
+
+function listaClientes(){
+    return clientes
+}
+
+console.log(listaClientes())
+
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha um cliente específico por seu ID.
+
+function clientePorId(id){ 
+return cliente = clientes.filter((clientes) => clientes.id == id)
+}
+
+console.log(clientePorId(2))
+
+console.log('\n --------------------------------\n')
+
 // Crie uma função que atualize as informações de um cliente existente.
+
+
+
+
+console.log('\n --------------------------------\n')
+
 // Crie uma função que exclua um cliente existente.
+
+function excluirCliente(id){
+    return clientes = clientes.filter((clientes) => clientes.id !== id)
+}
+
+console.log(excluirCliente(1))
+console.log('\n --------------------------------\n')
+
 // Crie uma função que crie um novo empréstimo.
+
+function criarEmprestimo(clienteId, livroId, data){ 
+const novoEmprestimo = {
+    id: Math.floor(Math.random() * 100000),
+    clienteId: clientes[clienteId].id,
+    livroId: livros[livroId].id,
+    data: data
+}
+return novoEmprestimo
+}
+
+console.log(criarEmprestimo( 2, 5, '16/05/2023'))
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha uma lista de todos os empréstimos.
+
+function listaEmprestimos(){
+    return emprestimos
+}
+
+console.log(listaEmprestimos())
+console.log('\n --------------------------------\n')
+
 // Crie uma função que obtenha um empréstimo específico por seu ID.
+
+function emprestimoPorId(data){
+    return emprestimos.find((emprestimo) => emprestimo.data === data)
+}
+
+console.log(emprestimoPorId('2023-06-08'))
+console.log('\n --------------------------------\n')
+
 // Crie uma função que atualize as informações de um empréstimo existente.
+
+
+
+console.log('\n --------------------------------\n')
+
 // Crie uma função que exclua um empréstimo existente.
+
+function excluirEmprestimo(data, data){
+    return emprestimo = emprestimos.filter((emprestimo) => emprestimo.data !== data)
+}
+
+console.log(excluirEmprestimo('2023-05-27', '2023-05-23'))
+console.log('\n --------------------------------\n')
 
 // Livros
 // Encontre todos os livros do autor "George Orwell".
+
+function filtroGeorge(autor){
+    return autorGeorge = livros.filter((livros)=> livros.autor === autor)
+}
+
+console.log(filtroGeorge('George Orwell'))
+console.log('\n --------------------------------\n')
+
 // Encontre todos os livros com mais de 500 páginas.
+
+function paginasLivros(){
+    return quinhentasPaginas = livros.filter((livros)=> livros.numeroDePaginas >= 500)
+}
+
+console.log(paginasLivros())
+console.log('\n --------------------------------\n')
+
 // Encontre o livro com o ID igual a 3 e retorne seu título.
+
+function id3Titulo(id){
+    let livroId3 = livros.find((livros) => livros.id === id)
+    return livroId3.titulo
+}
+
+console.log(id3Titulo(3))
+console.log('\n --------------------------------\n')
+
 // Encontre todos os livros com o título contendo a palavra "Comédia".
+
+function tituloComedia(){
+    return livros.filter((livro) => livro.titulo.includes('Comédia'));
+}
+
+console.log(tituloComedia('Comédia'))
+console.log('\n --------------------------------\n')
+
 // Adicione um novo livro ao array livros e atualize o seu ID.
+
+function adicionarLivro(id, titulo, autor, paginas){
+    const novoLivro = { 
+        id: id,
+        titulo: titulo,
+        autor: autor,
+        paginas: paginas
+    }
+    livros.push(novoLivro)
+    return livros
+} 
+
+console.log(adicionarLivro(21, 'GTA V', 'Rockstar', 241 ))
+console.log('\n --------------------------------\n')
+
 // Clientes
 // Encontre o cliente com o ID igual a 7 e retorne seu nome.
+
+function clienteId(id){
+    let clienteId7 = clientes.find((clientes)=> clientes.id === id)
+    return clienteId7.nome
+}
+
+console.log(clienteId(7))
+console.log('\n --------------------------------\n')
+
 // Encontre todos os clientes com o nome "João".
+
+function filtrarJoao(){
+    
+}
+
+console.log('\n --------------------------------\n')
+
 // Encontre todos os clientes com o email terminando em "@gmail.com".
 // Adicione um novo cliente ao array clientes e atualize o seu ID.
 // Remova o cliente com o ID igual a 4 do array clientes.
