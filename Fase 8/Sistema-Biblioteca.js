@@ -307,7 +307,7 @@ let emprestimos = [
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: clientes[4].id,
+        clienteId: clientes[9].id,
         livroId: livros[17].id,
         data: '2023-05-26',
     },
@@ -321,7 +321,7 @@ let emprestimos = [
 
     {
         id: Math.floor(Math.random() * 100000),
-        clienteId: clientes[6].id,
+        clienteId: clientes[9].id,
         livroId: livros[19].id,
         data: '2023-05-28',
     },
@@ -442,12 +442,6 @@ function obterLivroPorId(id) {
 
   console.log('\n --------------------------------\n')
 
-// Crie uma função que atualize as informações de um livro existente.
-
-
-
-console.log('\n --------------------------------\n')
-
 // Crie uma função que exclua um livro existente.
 
 function excluirLivroPorId(id) {
@@ -494,13 +488,6 @@ console.log(clientePorId(2))
 
 console.log('\n --------------------------------\n')
 
-// Crie uma função que atualize as informações de um cliente existente.
-
-
-
-
-console.log('\n --------------------------------\n')
-
 // Crie uma função que exclua um cliente existente.
 
 function excluirCliente(id){
@@ -541,12 +528,6 @@ function emprestimoPorId(data){
 }
 
 console.log(emprestimoPorId('2023-06-08'))
-console.log('\n --------------------------------\n')
-
-// Crie uma função que atualize as informações de um empréstimo existente.
-
-
-
 console.log('\n --------------------------------\n')
 
 // Crie uma função que exclua um empréstimo existente.
@@ -625,62 +606,166 @@ console.log('\n --------------------------------\n')
 
 // Encontre todos os clientes com o nome "João".
 
-function filtrarJoao(){ 
-
+function filtrarJoao(){
+    
 }
 
+console.log(filtrarJoao('João'))
 console.log('\n --------------------------------\n')
 
 // Encontre todos os clientes com o email terminando em "@gmail.com".
+
+function filtroEmail(email){
+    return clientes.filter((cliente) => cliente.email.endsWith(email));
+}
+
+console.log(filtroEmail('@gmail.com'))
+console.log('\n --------------------------------\n')
+
 // Adicione um novo cliente ao array clientes e atualize o seu ID.
+
+function adicionarCliente(id, nome, email, telefone){
+   const clienteNovo = { 
+    id: id,
+    nome: nome,
+    email: email,
+    telefone: telefone
+} 
+clientes.push(clienteNovo)
+return clientes
+}
+
+console.log(adicionarCliente(11, 'ana', 'ana@gmail.com', '3344-4441'))
+console.log('\n --------------------------------\n')
+
 // Remova o cliente com o ID igual a 4 do array clientes.
+
+function removerCliente(id){
+    return clientes.filter((clientes)=> clientes.id !== id)
+}
+
+console.log(removerCliente(4))
+console.log('\n --------------------------------\n')
+
 // Empréstimos
 // Encontre todos os empréstimos realizados no dia de hoje.
+
+function encontrarEmprestimosDoDia(data) {
+    return emprestimos.filter(emprestimo => emprestimo.data === data)
+    }
+
+    console.log(encontrarEmprestimosDoDia('17/05/2023'))
+    console.log('\n --------------------------------\n')
+
 // Encontre todos os empréstimos realizados pelo cliente com o ID igual a 9.
+
+function emprestimoId(id){
+    let clientePesquisa = emprestimos.filter((emprestimos)=> emprestimos.clienteId === id)
+    return clientePesquisa
+    }
+
+    console.log(emprestimoId(9))
+    console.log('\n --------------------------------\n')
+
 // Encontre todos os empréstimos de um livro com o ID igual a 12.
+
+function emprestimoComId(id){
+    let clientePesquisa = emprestimos.filter((emprestimos)=> emprestimos.livroId === id)
+    return clientePesquisa
+}
+
+console.log(emprestimoComId(12))
+console.log('\n --------------------------------\n')
+
 // Adicione um novo empréstimo ao array emprestimos.
-// Remova o empréstimo com o ID igual a 6 do array emprestimos.
-// Geral
-// Ordene o array livros em ordem alfabética pelo título.
-// Retorne um novo array contendo apenas os títulos dos livros do autor "Machado de Assis".
-// Ordene o array clientes em ordem alfabética pelo nome.
-// Retorne um novo array contendo apenas os nomes dos clientes com telefone começando com "11".
-// Retorne um novo array contendo apenas os empréstimos realizados entre duas datas específicas.
+
+function criarEmprestimoEAdicionar(clienteId, livroId, data){ 
+    const novoEmprestimo = {
+        id: Math.floor(Math.random() * 100000),
+        clienteId: clientes[clienteId].id,
+        livroId: livros[livroId].id,
+        data: data
+    }
+        emprestimos.push(novoEmprestimo)
+        return emprestimos
+    }
+        
+        console.log(criarEmprestimoEAdicionar( 2, 5, '16-05-2023'))
+        console.log('\n --------------------------------\n')
 
 
-// Fácil
 // Retorne um novo array contendo apenas os títulos dos livros.
+
+function nomeLivros(){
+return livros.map((livro) => livro.titulo)
+}
+console.log(nomeLivros())
+console.log('\n --------------------------------\n')
+
 // Retorne um novo array contendo apenas os nomes dos clientes.
+
+function nomeCliente(){
+    return clientes.map((clientes)=> clientes.nome)
+}
+
+console.log(nomeCliente())
+console.log('\n --------------------------------\n')
+
 // Adicione um novo livro ao array livros.
+
+function adicionarLivro (id, titulo, autor, paginas){
+   let novoLivro = { 
+        id: id,
+        titulo: titulo,
+        autor: autor,
+        numeroDePaginas: paginas
+    }
+    livros.push(novoLivro)
+    return livros
+}
+
+console.log(adicionarLivro(22, 'oi', 'matheus', 42))
+console.log('\n --------------------------------\n')
+
 // Adicione um novo cliente ao array clientes.
+
+function adicionarNovoCliente(id, nome, email, telefone){
+    const clienteNovo = { 
+     id: id,
+     nome: nome,
+     email: email,
+     telefone: telefone
+ } 
+ clientes.push(clienteNovo)
+ return clientes
+ }
+ 
+ console.log(adicionarNovoCliente(12, 'matheus', 'matheus@gmail.com', '(31) 3364-4545'))
+ console.log('\n --------------------------------\n')
+
 // Adicione um novo empréstimo ao array emprestimos.
-// Médio
+
+function adicionarEmprestimo(clienteId, livroId, data){ 
+    const novoEmprestimo = {
+        id: Math.floor(Math.random() * 100000),
+        clienteId: clientes[clienteId].id,
+        livroId: livros[livroId].id,
+        data: data
+    }
+        emprestimos.push(novoEmprestimo)
+        return emprestimos
+    }
+        
+        console.log(adicionarEmprestimo( 7, 9, '17-05-2023'))
+        console.log('\n --------------------------------\n')
+
+
 // Ordene o array livros em ordem decrescente pelo número de páginas.
-// Retorne um novo array contendo apenas os livros emprestados.
-// Encontre o cliente com o maior número de empréstimos realizados.
-// Encontre o livro mais emprestado.
-// Retorne um novo array contendo apenas os clientes que realizaram empréstimos no mês de maio.
-// Difícil
-// Encontre todos os livros emprestados por um cliente específico e retorne uma lista com os títulos dos livros.
-// Encontre todos os empréstimos realizados em um determinado livro e retorne uma lista com os nomes dos clientes que emprestaram o livro.
-// Encontre todos os empréstimos que estão atrasados e retorne uma lista com os nomes dos clientes, títulos dos livros e data de devolução esperada.
-// Crie uma função que retorne a média de empréstimos realizados por cliente.
-// Encontre todos os livros emprestados mais de uma vez e retorne uma lista com os títulos dos livros.
-// Muito Difícil
-// Crie uma função que retorne uma lista com os livros que nunca foram emprestados.
-// Crie uma função que retorne uma lista com os clientes que realizaram empréstimos de livros de um determinado autor.
-// Crie uma função que retorne o cliente com o maior atraso em devoluções de empréstimos.
-// Crie uma função que retorne o livro com a menor média de dias de empréstimo.
-// Crie uma função que retorne a data em que um livro foi mais emprestado.
-// Desafiador
-// Crie uma função que retorne a lista de livros mais emprestados em ordem crescente.
-// Crie uma função que retorne a lista de clientes que realizaram mais empréstimos em ordem crescente.
-// Crie uma função que retorne a lista de empréstimos em ordem decrescente pela data de empréstimo.
-// Crie uma função que retorne a lista de livros que foram emprestados por mais de um cliente em ordem alfabética.
-// Crie uma função que retorne a lista de clientes que realizaram empréstimos de todos os livros.
-// Extremamente Desafiador
-// Crie uma função que retorne a lista de clientes que realizaram empréstimos em todos os meses do ano.
-// Crie uma função que retorne a lista de livros que nunca foram emprestados em ordem alfabética.
-// Crie uma função que retorne a lista de empréstimos que foram realizados com atraso em ordem decrescente pela quantidade de dias de atraso.
-// Crie uma função que retorne a lista de clientes que realizaram empréstimos em todos os meses do ano em ordem alfabética.
-// Crie uma função que retorne a lista de livros mais emprestados por clientes com menos de 30 anos em ordem decrescente pela quantidade de empréstimos.
+
+function ordenarPaginasDecrescente(){
+    return livros.sort((a, b) => a.numeroDePaginas - b.numeroDePaginas)
+}
+
+console.log(ordenarPaginasDecrescente())
+console.log('\n --------------------------------\n')
+
