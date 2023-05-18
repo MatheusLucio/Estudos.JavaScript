@@ -625,8 +625,8 @@ console.log('\n --------------------------------\n')
 
 // Encontre todos os clientes com o nome "João".
 
-function filtrarJoao(){
-    
+function filtrarJoao(){ 
+
 }
 
 console.log('\n --------------------------------\n')
